@@ -108,3 +108,7 @@ class Chrome(object):
         Chrome.wait_element_clickable_by_xpath(xpath, seconds).click()
         Chrome.wait_element_clickable_by_xpath(
             xpath, seconds).send_keys(str(keys))
+
+
+if __name__ == "__main__":
+    Chrome.driver().get('www.yahoo.com.tw')
